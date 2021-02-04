@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="T10-Splitter.css" />
+        <link rel="stylesheet" href="testing resizable frames.css">
+        <script src="testing resizable frames.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous">
+        </script>
+        <script src="jquery-linedtextarea.js"></script>
+        <link href="jquery-linedtextarea.css" rel="stylesheet">
+    </head>
+
+    <body onload="onload()">
+        <div class="splitter">
+            <div id="first">
+                <textarea class="lined" id="text-box"></textarea>
+            </div>
+            <div id="separator"></div>
+            <div id="second">
+                <textarea class="lined" id="text-box"></textarea>
+            </div>
+        </div>
+
+        <script>
+          $(function() {
+            $(".lined").linedtextarea();
+          });
+        </script>
+
+        <!-- <script>
+          $(function() {
+            $(".lined").linedtextarea({
+              selectedLine: 10
+            });
+          });
+        </script> -->
+
+    </body>
+</html>

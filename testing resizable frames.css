@@ -1,0 +1,35 @@
+.splitter {
+    width: 100%;
+    display: flex;
+    border: black solid 1px;
+}
+
+#separator {
+    cursor: col-resize;
+    background-color: #13505b;
+    width: 10px;
+    height: 542px;
+    min-width: 10px;
+}
+
+#first {
+    background-color: #d1e3dd;
+    width: 50%;
+    height: 500px;
+    min-width: 10px;
+    padding: 20px;
+}
+
+#second {
+    background-color: #d1e3dd;
+    width: 50%;
+    height: 500px;
+    min-width: 10px;
+    padding: 20px;
+}
+
+#text-box {
+    height: 490px;
+    width: 100%;
+    resize: none;
+}
