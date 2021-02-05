@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Editor</title>
+</head>
+<body>
+    <div class="editor">
+        <div class="wrapper">
+            <div class="editorBody">
+                <div id="editorCode" class="code"></div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <button id="run" class="btn">RUN</button>
+                    <button id="reset" class="btn">RESET</button>
+                </div>
+                <div class="right">
+                    <div class="console">
+                        <ul class="logs"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Required ACE Library -->
+    <script src="aceEditor/src-min/ace.js"></script>
+    <script src="aceEditor/src-min//mode-javascript.js"></script>
+    <script src="aceEditor/src-min/ext-language_tools.js"></script>
+
+    <!-- Custom Script -->
+    <script src="code.js"></script>
+</body>
+</html>
